@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>마음서랍 · 내 목소리로 남기는 1분 자서전</title>
+<meta name="description" content="마음서랍은 AI가 인생을 대신 쓰지 않습니다. 당신이 기억하는 방식 그대로, 당신의 사진과 목소리로 1분 영상 자서전을 만듭니다.">
+<meta property="og:title" content="마음서랍 · 내 목소리로 남기는 1분 자서전">
+<meta property="og:description" content="내가 살았던 순간을, 내가 기억하는 방식으로, 내 목소리로.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="landing">
+
+<nav class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="마음서랍 홈">
+      <svg viewBox="0 0 40 40" width="32" height="32" aria-hidden="true">
+        <rect x="4" y="5" width="32" height="30" rx="6" fill="var(--wood)"/>
+        <rect x="8" y="9" width="24" height="10" rx="2.5" fill="var(--wood-lt)"/>
+        <rect x="8" y="21" width="24" height="10" rx="2.5" fill="var(--wood-lt)"/>
+        <path d="M17.2 13.4c0-1 .8-1.6 1.5-1.6.5 0 1 .3 1.3.7.3-.4.8-.7 1.3-.7.8 0 1.5.6 1.5 1.6 0 1.5-2.8 3.2-2.8 3.2s-2.8-1.7-2.8-3.2z" fill="var(--brass)"/>
+        <rect x="16" y="25" width="8" height="2.4" rx="1.2" fill="var(--brass)"/>
+      </svg>
+      <span>마음서랍</span>
+    </a>
+    <div class="nav-links">
+      <a href="#promise">마음서랍의 약속</a>
+      <a href="#how">만드는 과정</a>
+      <a href="#editors">다섯 편집자</a>
+      <a href="#faq">자주 묻는 질문</a>
+      <a class="btn primary sm" href="studio.html">첫 서랍 열기</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <div>
+      <p class="kicker">🗝️ 내 목소리로 남기는 1분 자서전</p>
+      <h1>기억이 흐려지기 전에,<br><em>마음서랍</em>에<br>담아 두세요.</h1>
+      <p class="lead">AI가 당신의 인생을 대신 쓰지 않습니다.<br>
+        당신이 들려준 기억 하나를, 당신의 말투와 사진과 목소리로<br class="pc-only">
+        1분 영상 자서전으로 엮어 드립니다.</p>
+      <div class="hero-cta">
+        <a class="btn primary lg" href="studio.html?new">무료로 첫 서랍 열기 →</a>
+        <a class="btn lg" href="#sample">1분 자서전 예시 보기</a>
+      </div>
+      <p class="hero-note">회원가입 없이 바로 시작 · 작성한 기억은 내 기기에만 저장됩니다</p>
+    </div>
+
+    <div class="showcase" id="sample">
+      <div class="screen">
+        <video id="heroVideo" src="presenter.mp4" muted autoplay loop playsinline preload="auto"></video>
+        <div class="shade"></div>
+        <span class="badge tag mem" id="heroTag">기억</span>
+        <span class="ttl">아버지의 자전거 · 예시</span>
+        <div class="sub" id="heroSub"><span>우리 아버지 자전거는 검은색 짐자전거였어요.</span></div>
+        <i class="time" id="heroTime"></i>
+      </div>
+      <div class="chip-float cf1"><b>“내 말 그대로”</b>사용자가 말하지 않은 문장은<br>넣지 않습니다</div>
+      <div class="chip-float cf2"><b>1:00</b>한 서랍엔 한 기억</div>
+    </div>
+  </div>
+  <a class="scroll-cue" href="#promise">SCROLL</a>
+</header>
+
+<!-- PROMISE -->
+<section class="section" id="promise">
+  <div class="wrap">
+    <p class="eyebrow">OUR PROMISE</p>
+    <h2 class="h2">멋진 이야기보다,<br>진짜 당신의 이야기를 남깁니다.</h2>
+    <p class="sub-lead">마음서랍이 지키는 순서는 하나입니다.<br><b>기억의 진실성 → 당신의 목소리 → 자연스러운 감정 → 이야기 완성도 → 영상의 아름다움.</b><br>더 예쁜 영상을 위해 기억을 바꾸지 않습니다.</p>
+    <div class="promise reveal">
+      <article class="card">
+        <div class="ico">✋</div>
+        <h3>없는 일은 만들지 않습니다</h3>
+        <p>말하지 않은 사건, 감정, 관계, 날짜, 대사는 넣지 않습니다. 기억이 빈 곳은 빈 채로 둡니다.</p>
+      </article>
+      <article class="card">
+        <div class="ico">🗣️</div>
+        <h3>당신의 말투 그대로</h3>
+        <p>“우리 아버지”, “뭐, 그때는 다 그렇게 살았어요.” 평소 쓰시는 호칭과 말버릇을 살려 1인칭으로 씁니다.</p>
+      </article>
+      <article class="card">
+        <div class="ico">🏷️</div>
+        <h3>기억과 재현을 구분합니다</h3>
+        <p>분명한 기억, 흐릿한 기억, 사진이 없어 다시 그린 장면을 표시합니다. 재현한 장면을 실제 사진처럼 쓰지 않습니다.</p>
+      </article>
+    </div>
+
+    <div class="compare reveal" style="margin-top:40px">
+      <div class="quote-box bad"><small>✕ 작가가 쓴 문장</small><p>아버지의 성실함은 훗날 나의 인생을 지탱하는 위대한 정신적 유산이 되었다.</p></div>
+      <div class="quote-box good"><small>✓ 마음서랍이 남기는 문장</small><p>우리 아버지는 매일 새벽 다섯 시면 가게 문을 열었어요. 나는 아직도 그게 기억나요.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ONE MEMORY -->
+<section class="section alt">
+  <div class="wrap split">
+    <figure class="split-img reveal">
+      <img src="images/hand-photos.jpg" alt="옛 가족사진 두 장을 손에 들고 있는 모습" loading="lazy">
+      <figcaption>사진 한 장, 기억 하나면 시작할 수 있어요</figcaption>
+    </figure>
+    <div>
+    <p class="eyebrow">ONE DRAWER, ONE MEMORY</p>
+    <h2 class="h2">한 서랍에는<br>한 기억만 담습니다</h2>
+    <p class="sub-lead">“나의 70년 인생”을 1분에 담으면 아무것도 남지 않습니다.<br>인생은 여러 개의 서랍으로 나누어, 한 장면씩 천천히 꺼냅니다.</p>
+    <div class="topics reveal">
+      <span class="topic">아버지의 자전거</span><span class="topic">1983년, 첫 월급</span><span class="topic">엄마의 도시락</span>
+      <span class="topic">처음 서울에 올라온 날</span><span class="topic">우리 집 첫 텔레비전</span><span class="topic">군대 가던 날</span>
+      <span class="topic">처음 아이를 안았던 순간</span><span class="topic">할머니의 부엌</span><span class="topic">매일 다니던 공장길</span>
+      <span class="topic">문을 닫던 마지막 영업일</span><span class="topic no">나의 70년 인생</span>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW -->
+<section class="section" id="how">
+  <div class="wrap">
+    <p class="eyebrow">HOW IT WORKS</p>
+    <h2 class="h2">사진 한 장과 질문 몇 개로 시작합니다</h2>
+    <p class="sub-lead">“당신의 인생을 이야기해 주세요” 같은 막막한 질문은 하지 않습니다. 장면 하나에서 시작해, 질문은 한 번에 하나씩 드립니다. 기억나지 않으면 “괜찮습니다”하고 넘어갑니다.</p>
+    <ol class="flow reveal" style="padding:0;margin:0">
+      <li><b>사진 올리기</b><span>남아 있는 사진이 있으면 먼저 꺼내 주세요. 없어도 괜찮아요.</span></li>
+      <li><b>한 장면 떠올리기</b><span>“어린 시절 살던 집을 떠올리면 무엇이 먼저 보이나요?”</span></li>
+      <li><b>기억 채집</b><span>사람·장소·시간·장면·감각·말을 하나씩 천천히 여쭙니다.</span></li>
+      <li><b>1분 대본</b><span>들려주신 말만으로 1인칭 내레이션을 엮습니다.</span></li>
+      <li><b>장면 구성</b><span>실제 사진을 먼저 쓰고, 없는 장면만 ‘재현’으로 설계합니다.</span></li>
+      <li><b>내 목소리</b><span>대본을 직접 읽어 녹음합니다. 그 목소리가 영상이 됩니다.</span></li>
+      <li><b>1분 영상</b><span>다섯 편집자의 검증을 통과하면 가족에게 건넵니다.</span></li>
+    </ol>
+
+    <div class="timeline reveal">
+      <p class="eyebrow" style="margin-bottom:14px">마음서랍 1분 영상의 기본 구조</p>
+      <div class="tl-bar">
+        <div style="flex:8;background:var(--wood-lt)">0–8초</div>
+        <div style="flex:12;background:var(--sage)">8–20초</div>
+        <div style="flex:22;background:var(--wood)">20–42초</div>
+        <div style="flex:10;background:var(--brass)">42–52초</div>
+        <div style="flex:8;background:var(--wood-dk)">52–60초</div>
+      </div>
+      <div class="tl-legend">
+        <div><b>기억을 여는 장면</b>사진 한 장, 물건 하나, 한 문장</div>
+        <div><b>그때의 상황</b>언제, 어디서였는지 최소한만</div>
+        <div><b>가장 중요한 기억</b>사람의 행동과 말, 그 장면</div>
+        <div><b>지금의 나</b>직접 하신 말이 있을 때만</div>
+        <div><b>마지막 장면</b>교훈 대신 장면이나 그때의 말</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDITORS -->
+<section class="section alt" id="editors">
+  <div class="wrap">
+    <p class="eyebrow">FIVE EDITORS</p>
+    <h2 class="h2">다섯 명의 편집자가 한 편을 함께 봅니다</h2>
+    <p class="sub-lead">한 명은 기억을 꺼내고, 셋은 검증하고, 마지막 한 명은 가족의 눈으로 봅니다. 기억과 다른 문장이 하나라도 있으면 다시 고칩니다.</p>
+    <div class="roles reveal">
+      <article class="role" style="--rc:var(--c-black)"><span class="rn">BLACK</span><h3>기억 편집자</h3><p>20년차 인터뷰 작가처럼 듣고, 당신의 언어로 정리합니다.</p><q>그 장면에서 기억나는 소리가 있나요?</q></article>
+      <article class="role" style="--rc:var(--c-red)"><span class="rn">RED</span><h3>기억 검증자</h3><p>들려주신 기억과 완성본을 한 줄씩 대조합니다.</p><q>이 감정은 사용자가 표현하지 않았습니다.</q></article>
+      <article class="role" style="--rc:var(--c-silver)"><span class="rn">SILVER</span><h3>구성 편집자</h3><p>1분 안에 하나의 기억이 자연스럽게 전해지는지 봅니다.</p><q>마지막을 교훈 대신 장면으로 끝내 볼까요.</q></article>
+      <article class="role" style="--rc:var(--c-blue)"><span class="rn">BLUE</span><h3>감정 편집자</h3><p>소리 내어 읽었을 때 정말 그 사람 목소리 같은지 듣습니다.</p><q>이 문장은 작가가 말하는 것처럼 들립니다.</q></article>
+      <article class="role" style="--rc:var(--c-gold)"><span class="rn">GOLD</span><h3>가족의 눈</h3><p>분석하지 않습니다. 처음 보는 가족처럼 느낌으로 반응합니다.</p><q>가족에게 보여주고 싶다.</q></article>
+    </div>
+    <p class="sample-note">RED·SILVER·BLUE 모두 9.7점 이상, GOLD가 “다시 보고 싶다” 또는 “가족에게 보여주고 싶다”를 고를 때 한 편이 완성됩니다.</p>
+  </div>
+</section>
+
+<!-- LABELS -->
+<section class="section">
+  <div class="wrap">
+    <p class="eyebrow">HONEST LABELS</p>
+    <h2 class="h2">흐릿한 기억은 흐릿한 대로,<br>정직하게 표시합니다</h2>
+    <p class="sub-lead">기억은 빠지기도 하고, 가족마다 다르게 기억하기도 합니다. 그 불완전함까지 당신의 기억입니다.</p>
+    <div class="labels reveal">
+      <article class="card"><span class="tag mem">기억</span><h3>분명히 기억하는 것</h3><p>직접 보고 들은 그대로 남깁니다.</p><p class="ex">“뒷자리에 앉으면 아버지 등에서 비누 냄새가 났어요.”</p></article>
+      <article class="card"><span class="tag est">추정</span><h3>시기나 장소가 흐릿한 것</h3><p>단정하지 않고, 말씀하신 그대로 ‘쯤’과 ‘것 같다’를 살립니다.</p><p class="ex">“아마 일곱 살쯤이었던 것 같아요.”</p></article>
+      <article class="card"><span class="tag rep">재현</span><h3>사진이 없어 다시 그린 장면</h3><p>들려주신 정보만 확정하고, 얼굴 대신 뒷모습·손·사물로 기억을 그립니다.</p><p class="ex">“그 골목은 사진이 없어서, 기억대로 다시 그렸습니다.”</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- SAMPLES -->
+<section class="section alt">
+  <div class="wrap">
+    <p class="eyebrow">DRAWERS</p>
+    <h2 class="h2">이런 서랍들이 만들어집니다</h2>
+    <p class="sub-lead">거창한 사건이 아니어도 됩니다. 붕어빵 냄새 하나, 신발 한 켤레가 한 편의 자서전이 됩니다.</p>
+    <div class="samples reveal">
+      <article class="sample">
+        <div class="art photo" style="background-image:url(images/photos-table.jpg)" role="img" aria-label="나무 탁자 위의 옛 가족사진"><span class="tag mem">실제 사진</span></div>
+        <div class="body"><h3>아버지의 자전거</h3><p class="one">새벽마다 가게 문을 열러 가던 아버지의 짐자전거</p>
+          <blockquote>지금도 자전거 체인 소리를 들으면, 그 새벽이 먼저 생각나요.</blockquote></div>
+      </article>
+      <article class="sample">
+        <div class="art rep-art" role="img" aria-label="재현 장면 예시"><span class="tag rep">재현 장면</span><div class="rep-note"><small>AI 재현 예정 장면 · 실제 기록 아님</small>겨울 교실, 난로 위<br>양은 도시락</div></div>
+        <div class="body"><h3>엄마의 도시락</h3><p class="one">겨울이면 난로 위에 올려 두던 양은 도시락</p>
+          <blockquote>뚜껑을 열면 밥 위에 계란 하나가 꼭 있었어요. 그건 우리 엄마 표시였지.</blockquote></div>
+      </article>
+      <article class="sample">
+        <div class="art photo" style="background-image:url(images/album.jpg)" role="img" aria-label="옛 사진이 붙은 앨범"><span class="tag est">추정</span></div>
+        <div class="body"><h3>1983년, 첫 월급</h3><p class="one">누런 월급봉투를 들고 집까지 걸어온 날</p>
+          <blockquote>얼마였는지는 기억이 안 나요. 봉투를 엄마한테 그대로 드렸던 것만 생각나요.</blockquote></div>
+      </article>
+    </div>
+    <p class="sample-note">※ 위 내용은 서비스 이해를 돕기 위한 예시입니다.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="wrap">
+    <p class="eyebrow center">FAQ</p>
+    <h2 class="h2 center">자주 묻는 질문</h2>
+    <div class="faq">
+      <details open><summary>기억이 잘 안 나는데도 만들 수 있나요?</summary><p>네. 질문은 기억을 시험하는 문제가 아닙니다. “기억이 안 나요”라고 하시면 “괜찮습니다, 기억나는 부분만 남기겠습니다” 하고 넘어갑니다. 빈칸을 AI가 그럴듯하게 채우지 않습니다.</p></details>
+      <details><summary>사진이 하나도 없어도 되나요?</summary><p>괜찮습니다. 사진이 없는 장면은 말씀하신 내용만으로 ‘재현’ 장면을 설계하고, 영상에도 재현이라고 표시합니다. 있으면 좋을 자료는 따로 알려 드리지만, 자료가 없다고 이야기를 멈추지 않습니다.</p></details>
+      <details><summary>정말 제 목소리로 나오나요?</summary><p>대본의 장면마다 직접 읽어 녹음하실 수 있고, 녹음한 목소리가 그대로 영상 내레이션이 됩니다. 녹음이 어려운 장면만 기계 음성으로 미리 들어 보실 수 있습니다.</p></details>
+      <details><summary>가족과 기억이 서로 다르면요?</summary><p>누가 맞는지 판단하지 않습니다. “나는 그날 비가 왔다고 기억한다. 누나는 맑은 날이었다고 기억한다.”처럼 각자의 기억으로 남깁니다.</p></details>
+      <details><summary>아픈 기억도 다뤄야 하나요?</summary><p>아니요. 남기고 싶지 않은 내용은 이유를 묻지 않고 빼 드립니다. 죽음, 질병, 가난 같은 기억도 말씀하신 범위 안에서만 담고, 자극적으로 만들지 않습니다.</p></details>
+      <details><summary>제 이야기는 어디에 저장되나요?</summary><p>마음서랍 스튜디오에서 작성한 기억과 사진, 녹음은 지금 쓰시는 기기의 브라우저 안에만 저장됩니다. 원하실 때 파일로 내려받아 보관하거나 가족에게 전할 수 있습니다.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final">
+  <div class="wrap">
+    <blockquote>“이 영상을 본 사람이 ‘AI가 만든 이야기’가 아니라<br>‘이 사람이 자기 삶을 이야기하고 있다’고 느끼는가.”</blockquote>
+    <h2 class="h2">오늘, 서랍 하나만 열어 볼까요?</h2>
+    <p>장면 하나면 충분합니다. 나머지는 천천히 여쭙겠습니다.</p>
+    <a class="btn primary lg" href="studio.html?new">첫 서랍 열기 →</a>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <a class="brand" href="#top" style="font-size:18px">
+      <svg viewBox="0 0 40 40" width="24" height="24" aria-hidden="true"><rect x="4" y="5" width="32" height="30" rx="6" fill="var(--wood)"/><rect x="8" y="9" width="24" height="10" rx="2.5" fill="var(--wood-lt)"/><rect x="8" y="21" width="24" height="10" rx="2.5" fill="var(--wood-lt)"/><rect x="16" y="13" width="8" height="2.4" rx="1.2" fill="var(--brass)"/><rect x="16" y="25" width="8" height="2.4" rx="1.2" fill="var(--brass)"/></svg>
+      마음서랍
+    </a>
+    <span>내가 살았던 순간을, 내가 기억하는 방식으로, 내 목소리로.</span>
+    <span>© 2026 마음서랍 · 사진: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></span>
+  </div>
+</footer>
+
+<script>
+// 예시 영상 자막 (아버지의 자전거 · 예시)
+const lines = [
+  ['mem','기억','우리 아버지 자전거는 검은색 짐자전거였어요.'],
+  ['est','추정','아마 제가 일곱 살쯤이었던 것 같아요.'],
+  ['mem','기억','새벽 다섯 시면 그 자전거를 끌고 가게 문을 열러 나가셨죠.'],
+  ['mem','기억','뒷자리에 앉으면 아버지 등에서 비누 냄새가 났어요.'],
+  ['rep','재현','그 골목은 사진이 없어서, 기억대로 다시 그려 봤습니다.'],
+  ['mem','기억','지금도 자전거 체인 소리를 들으면, 그 새벽이 먼저 생각나요.']
+];
+const v = document.getElementById('heroVideo'), sub = document.getElementById('heroSub'),
+      tag = document.getElementById('heroTag'), bar = document.getElementById('heroTime');
+let last = -1;
+v.addEventListener('timeupdate', () => {
+  const d = v.duration || 60, i = Math.min(lines.length - 1, Math.floor(v.currentTime / d * lines.length));
+  bar.style.width = (v.currentTime / d * 100) + '%';
+  if (i === last) return; last = i;
+  sub.style.opacity = 0;
+  setTimeout(() => { sub.innerHTML = '<span>' + lines[i][2] + '</span>'; tag.className = 'badge tag ' + lines[i][0]; tag.textContent = lines[i][1]; sub.style.opacity = 1; }, 300);
+});
+// 스크롤 효과
+const nav = document.getElementById('nav');
+addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 10), {passive:true});
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold:.12});
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>

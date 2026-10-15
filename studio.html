@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>마음서랍 스튜디오 · 1분 자서전 만들기</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="studio.css">
+</head>
+<body class="studio">
+
+<nav class="nav scrolled">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="마음서랍 소개로">
+      <svg viewBox="0 0 40 40" width="30" height="30" aria-hidden="true">
+        <rect x="4" y="5" width="32" height="30" rx="6" fill="var(--wood)"/>
+        <rect x="8" y="9" width="24" height="10" rx="2.5" fill="var(--wood-lt)"/>
+        <rect x="8" y="21" width="24" height="10" rx="2.5" fill="var(--wood-lt)"/>
+        <path d="M17.2 13.4c0-1 .8-1.6 1.5-1.6.5 0 1 .3 1.3.7.3-.4.8-.7 1.3-.7.8 0 1.5.6 1.5 1.6 0 1.5-2.8 3.2-2.8 3.2s-2.8-1.7-2.8-3.2z" fill="var(--brass)"/>
+        <rect x="16" y="25" width="8" height="2.4" rx="1.2" fill="var(--brass)"/>
+      </svg>
+      <span>마음서랍 <small class="studio-label">스튜디오</small></span>
+    </a>
+    <div class="nav-links">
+      <button class="btn sm ghost" id="goHome">🗄️ 내 서랍장</button>
+      <button class="btn sm" id="openPlayer" hidden>▶ 1분 미리보기</button>
+    </div>
+  </div>
+</nav>
+
+<main class="wrap" id="app"></main>
+
+<!-- 미리보기 플레이어 -->
+<div class="modal" id="player" hidden>
+  <div class="modal-in">
+    <div class="pl-stage" id="plStage">
+      <div class="pl-bg" id="plBg"></div>
+      <div class="pl-shade"></div>
+      <span class="tag pl-tag" id="plTag"></span>
+      <div class="pl-titlecard" id="plTitle"></div>
+      <div class="pl-sub" id="plSub"></div>
+      <button class="pl-big" id="plBig" aria-label="재생">▶</button>
+    </div>
+    <div class="pl-bar"><div id="plSegs"></div></div>
+    <div class="pl-ctl">
+      <button class="btn sm primary" id="plPlay">▶ 재생</button>
+      <button class="btn sm" id="plRestart">⟲ 처음부터</button>
+      <label class="chk"><input type="checkbox" id="plTts" checked> 녹음 없는 장면은 기계 음성으로</label>
+      <span class="spacer"></span>
+      <span class="pl-time" id="plTime">0:00</span>
+      <button class="btn sm ghost" id="plClose">닫기</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script src="studio.js"></script>
+</body>
+</html>
